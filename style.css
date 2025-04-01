@@ -197,7 +197,7 @@ img, svg {
 
 /* Card Header */
 .card-header {
-    padding: 1.5rem;  /* Decreased from 1.75rem */
+    padding: 1.5rem 1.5rem 0.75rem;  /* Adjusted padding to reduce bottom space */
 }
 
 .logo {
@@ -218,23 +218,6 @@ img, svg {
     transform: translateY(-2px);
 }
 
-.logo-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--accent), transparent);
-    transform: scaleX(0);
-    transition: transform 400ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-    opacity: 0.8;
-}
-
-.logo-link:hover::after {
-    transform: scaleX(1);
-}
-
 .logo-text {
     font-family: var(--font-serif);
     font-weight: 700;
@@ -249,9 +232,23 @@ img, svg {
     position: relative;
 }
 
+/* Simple divider styling for header */
+.simple-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 20px 0 5px; /* Adjusted margins for better spacing */
+}
+
+.simple-divider .divider-line {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    flex-grow: 1;
+}
+
 /* Card Body */
 .card-body {
-    padding: 2.25rem 1.5rem;  /* Decreased from 2.5rem 1.75rem */
+    padding: 0.75rem 1.5rem 2rem;  /* Adjusted padding to balance spacing */
     text-align: center;
 }
 
@@ -285,7 +282,7 @@ img, svg {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin: 2rem 0;
+    margin: 1.5rem 0;  /* Reduced vertical margin */
 }
 
 .divider-line {
@@ -320,7 +317,7 @@ img, svg {
     line-height: 1.7;
     color: var(--text-secondary);
     max-width: 90%;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1.5rem;  /* Reduced bottom margin */
 }
 
 /* Contact Button */
@@ -336,7 +333,7 @@ img, svg {
     font-size: 0.95rem;  /* Decreased from 1rem */
     border-radius: var(--border-radius-lg);
     transition: all 400ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-    margin: 1rem 0 1.25rem;  /* Decreased from 1.25rem 0 1.5rem */
+    margin: 0.5rem 0 1rem;  /* Adjusted margins for better spacing */
     box-shadow: 0 6px 15px rgba(99, 66, 255, 0.3),
                 inset 0 1px 1px rgba(255, 255, 255, 0.15),
                 0 0 0 0 rgba(99, 66, 255, 0.5);
@@ -670,11 +667,19 @@ img, svg {
     }
     
     .card-header {
-        padding: 1.15rem;  /* Decreased from 1.25rem */
+        padding: 1.25rem 1.15rem 0.5rem;  /* Adjusted for mobile */
     }
     
     .card-body {
-        padding: 1.75rem 1.15rem;  /* Decreased from 2rem 1.25rem */
+        padding: 1.5rem 1.15rem 1.75rem;  /* Adjusted for mobile */
+    }
+    
+    .simple-divider {
+        margin: 8px 0 3px;  /* Tighter spacing on mobile */
+    }
+    
+    .divider {
+        margin: 1.25rem 0;  /* Reduced margins on mobile */
     }
     
     .main-title {
