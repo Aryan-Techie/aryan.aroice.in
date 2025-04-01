@@ -7,6 +7,6 @@ Repository for my personal website hosted at [aryan.aroice.in](https://aryan.aro
 ## 📬 Contact
 
 - 📧 Email: [aryan@aroice.in]
-- 💼 LinkedIn: [Your Name](https://linkedin.com/in/aryantechie)
-- 🐦 Twitter: [@your_handle](https://twitter.com/aryantechie)
+- 💼 LinkedIn: [Aryan Jangra](https://linkedin.com/in/aryantechie)
+- 🐦 Twitter: [@aryantechie](https://twitter.com/aryantechie)
 - 💻 GitHub: [Aryan-Techie](https://github.com/Aryan-Techie)
