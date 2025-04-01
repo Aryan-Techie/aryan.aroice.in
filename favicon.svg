@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <style>
+    @font-face {
+      font-family: 'OldEnglish';
+      src: local('Old English Text MT'), local('OldEnglishTextMT');
+    }
+    
+    text {
+      font-family: 'OldEnglish', 'Times New Roman', serif;
+      font-weight: bold;
+      font-size: 320px;
+      fill: #6342ff;
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+    
+    /* Fallback for browsers that don't support the Old English font */
+    @media (prefers-reduced-contrast: reduce) {
+      text {
+        font-family: serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+    }
+    
+    circle {
+      fill: #141414;
+    }
+    
+    @media (prefers-color-scheme: light) {
+      circle {
+        fill: #f8f8f8;
+      }
+    }
+  </style>
+  
+  <circle cx="256" cy="256" r="256" />
+  <text x="256" y="320">A</text>
+</svg>
